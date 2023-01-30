@@ -55,12 +55,17 @@ int main()
 	bool frage3_dran = false;
 	string antwort;
 	int punkte = 0;
-	string wiederholen = "nein";
+	string wiederholen;
 
 	cout << "Fuehrerschein Test" << endl << endl << "geben sie die Antworten in dem Format A,B,C an" << endl << endl << "Um Fortzufahren schreiben sie Start und Druecken sie Enter" << endl << endl;
 	cin >> start;
 
 	do {
+		Fertig = 0;
+		punkte = 0;
+		frage1_dran = false;
+		frage2_dran = false;
+		frage3_dran = false;
 		while (Fertig < 3) {
 			int frageauswahl = rand() % 3;
 
